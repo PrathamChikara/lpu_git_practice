@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: Text("Hello World"),));
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("My First App")),
+        body: Center(
+          child: Text("Hello World",
+          style: TextStyle(
+            color: Colors.red
+          ),),
+        ),
+      ),
+    ),
+  );
 }
